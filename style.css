@@ -1,0 +1,19 @@
+.header {
+  color: gold;
+  text-align: center; 
+}
+
+.body {
+    background-color: purple;
+}
+
+.smhdr {
+    color:silver;
+    text-align: center;
+}
+
+#startBtn {
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+}
