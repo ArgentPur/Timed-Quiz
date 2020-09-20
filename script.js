@@ -1,6 +1,9 @@
+
+
 var counter = 60;
+var score = 0
 var question = [
-   {q1: "JavaScript is used to make websites interactive.",
+   {q1: "JavaScript is used Jato make websites interactive.",
     r1: "True",
     r2: "False"},
 
@@ -12,7 +15,7 @@ var question = [
     r1: "True",
     r2: "False"},
 
-    {q4: "",
+    {q4: "jQuery code can be more concise than JavaScript.",
     r1: "True",
     r2: "False"},
 
@@ -26,9 +29,23 @@ var question = [
 
 ]
 
+function startCounter() {
+    setTime(60);
 
-document.getElementById("startBtn").addEventListener("click", function startTimer(){
+    if (totalSeconds > 0) {
+        interval = setinterval(function() {
+            seconds--;
+            renderTime();
+        }, 1000);
+    } else {
+        alert("Time has expired")
+    }
+}
+
+document.getElementById("startBtn").addEventListener("click", function startCounter(){
     alert("All questions are True/False.")
+    
+
     
 
 });
