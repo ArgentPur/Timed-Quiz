@@ -108,15 +108,23 @@
       </div>
 
       <script>
+          var yourScore = document.getElementById("yourScore").textContent;
           var seconds = document.getElementById("timeLeft").textContent;
           var countdown = setInterval(function() {
               seconds--;
               document.getElementById("timeLeft").textContent = seconds;
               if (seconds <= 0) clearInterval(countdown);
           }, 1000);
+
+          
           document.getElementById("startBtn").addEventListener("click", function startTest(){
           alert("The timer has been running since the page loaded! Hope you didn't spend too much time reading the headers.")
           });
+
+
+          document.getElementById("correct").addEventListener("click", function()  {
+            yourScore++;
+          })
       </script>
     
 <script scr="script.js"></script>
