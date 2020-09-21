@@ -21,6 +21,7 @@
         
         
     </div>
+    
       
     <div>
         <table>
@@ -102,11 +103,18 @@
         <p>Your Score: </p>
         <br>
         <p>Time left: </p>
+        <span id= "timeLeft">60</span>
       </div>
 
       <script>
+          var seconds = document.getElementById("timeLeft").textContent;
+          var countdown = setInterval(function() {
+              seconds--;
+              document.getElementById("timeLeft").textContent = seconds;
+              if (seconds <= 0) clearInterval(countdown);
+          }, 1000);
           document.getElementById("startBtn").addEventListener("click", function startTimer(){
-          alert("All questions are True/False.")
+          alert("The timer has been running since the page loaded! Hope you didn't spend too much time reading the headers.")
           });
       </script>
     
