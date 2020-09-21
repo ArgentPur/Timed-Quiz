@@ -19,11 +19,11 @@ var question = [
     r1: "True",
     r2: "False"},
 
-    {q5: "",
+    {q5: "APIs allow websites to access databases from other websites.",
     r1: "True",
     r2: "False"},
 
-    {q6: "",
+    {q6: "Bootstrap is cool.",
     r1: "True",
     r2: "False"},
 

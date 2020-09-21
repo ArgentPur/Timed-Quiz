@@ -40,8 +40,8 @@
         <div class="card-body">
           <h5 class="card-title">JavaSript</h5>
           <p class="card-text">JavaScript is used to make websites interactive.</p>
-          <a href="#" class="btn btn-primary">True</a>
-          <a href="#" class="btn btn-primary">False</a>
+          <a href="#" class="btn btn-primary" id= "correct">True</a>
+          <a href="#" class="btn btn-primary" id= "incorrect">False</a>
         </div>
       </div>
       <div class="card">
@@ -51,8 +51,8 @@
         <div class="card-body">
           <h5 class="card-title">CSS</h5>
           <p class="card-text">CSS stands for "cool style sheet".</p>
-          <a href="#" class="btn btn-primary">True</a>
-          <a href="#" class="btn btn-primary">False</a>
+          <a href="#" class="btn btn-primary" id= "incorrect">True</a>
+          <a href="#" class="btn btn-primary" id= "correct">False</a>
         </div>
       </div>
       <div class="card">
@@ -62,8 +62,8 @@
         <div class="card-body">
           <h5 class="card-title">HTML</h5>
           <p class="card-text">HTML is a type of markup language.</p>
-          <a href="#" class="btn btn-primary">True</a>
-          <a href="#" class="btn btn-primary">False</a>
+          <a href="#" class="btn btn-primary" id= "correct">True</a>
+          <a href="#" class="btn btn-primary" id= "incorrect">False</a>
         </div>
       </div>
       <div class="card">
@@ -73,8 +73,8 @@
         <div class="card-body">
           <h5 class="card-title">jQuery</h5>
           <p class="card-text">jQuery code can be more concise than JavaScript.</p>
-          <a href="#" class="btn btn-primary">True</a>
-          <a href="#" class="btn btn-primary">False</a>
+          <a href="#" class="btn btn-primary" id= "correct">True</a>
+          <a href="#" class="btn btn-primary" id= "incorrect">False</a>
         </div>
       </div>
       <div class="card">
@@ -83,9 +83,9 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">API</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">True</a>
-          <a href="#" class="btn btn-primary">False</a>
+          <p class="card-text">APIs allow websites to access databases from other websites.</p>
+          <a href="#" class="btn btn-primary" id= "correct">True</a>
+          <a href="#" class="btn btn-primary" id= "incorrect">False</a>
         </div>
       </div>
       <div class="card">
@@ -94,13 +94,14 @@
         </div>
         <div class="card-body">
           <h5 class="card-title">Bootstrap</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">True</a>
-          <a href="#" class="btn btn-primary">False</a>
+          <p class="card-text">Bootstrap is cool.</p>
+          <a href="#" class="btn btn-primary" id= "correct">True</a>
+          <a href="#" class="btn btn-primary" id= "incorrect">False</a>
         </div>
       </div>
       <div class = stat>
         <p>Your Score: </p>
+        <span id= "yourScore">0</span>
         <br>
         <p>Time left: </p>
         <span id= "timeLeft">60</span>
@@ -113,7 +114,7 @@
               document.getElementById("timeLeft").textContent = seconds;
               if (seconds <= 0) clearInterval(countdown);
           }, 1000);
-          document.getElementById("startBtn").addEventListener("click", function startTimer(){
+          document.getElementById("startBtn").addEventListener("click", function startTest(){
           alert("The timer has been running since the page loaded! Hope you didn't spend too much time reading the headers.")
           });
       </script>
