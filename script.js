@@ -50,11 +50,61 @@ var question = [
           yourScore++;
         })
 
+        document.getElementById("incorrect").addEventListener("click", function() {
+            alert("incorrect");
+        })
+
+        document.getElementById("correct2").addEventListener("click", function()  {
+            alert("correct");
+            document.getElementById("yourScore").textContent = yourScore;
+            yourScore++;
+          })
+  
+          document.getElementById("incorrect2").addEventListener("click", function() {
+              alert("incorrect");
+          })
+
+          document.getElementById("correct3").addEventListener("click", function()  {
+            alert("correct");
+            document.getElementById("yourScore").textContent = yourScore;
+            yourScore++;
+          })
+  
+          document.getElementById("incorrect3").addEventListener("click", function() {
+              alert("incorrect");
+          })
+
+          document.getElementById("correct4").addEventListener("click", function()  {
+            alert("correct");
+            document.getElementById("yourScore").textContent = yourScore;
+            yourScore++;
+          })
+  
+          document.getElementById("incorrect4").addEventListener("click", function() {
+              alert("incorrect");
+          })
+
+          document.getElementById("correct5").addEventListener("click", function()  {
+            alert("correct");
+            document.getElementById("yourScore").textContent = yourScore;
+            yourScore++;
+          })
+  
+          document.getElementById("incorrect5").addEventListener("click", function() {
+              alert("incorrect");
+          })
+
+          document.getElementById("correct6").addEventListener("click", function()  {
+            alert("correct");
+            document.getElementById("yourScore").textContent = yourScore;
+            yourScore++;
+          })
+  
+          document.getElementById("incorrect6").addEventListener("click", function() {
+              alert("incorrect");
+          })
+
 
 document.getElementById("startBtn").addEventListener("click", function startCounter(){
     alert("All questions are True/False.")
-    
-
-    
-
-});
+    });
