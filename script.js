@@ -29,18 +29,27 @@ var question = [
 
 ]
 
-function startCounter() {
-    setTime(60);
-
-    if (totalSeconds > 0) {
-        interval = setinterval(function() {
+        var yourScore = document.getElementById("yourScore").textContent;
+        var seconds = document.getElementById("timeLeft").textContent;
+        var countdown = setInterval(function() {
             seconds--;
-            renderTime();
+            document.getElementById("timeLeft").textContent = seconds;
+            if (seconds <= 0) clearInterval(countdown);
         }, 1000);
-    } else {
-        alert("Time has expired")
-    }
-}
+
+        testCard.style.display = "none";
+        document.getElementById("startBtn").addEventListener("click", function startTest(){
+            testCard.style.display = "";
+        alert("The timer has been running since the page loaded! Hope you didn't spend too much time reading the headers.")
+        });
+
+
+        document.getElementById("correct").addEventListener("click", function()  {
+          alert("correct");
+          document.getElementById("yourScore").textContent = yourScore;
+          yourScore++;
+        })
+
 
 document.getElementById("startBtn").addEventListener("click", function startCounter(){
     alert("All questions are True/False.")
